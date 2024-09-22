@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- add title-->
+	<title>Registration Page</title>
+	
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<script src="js/register.js"></script>
+</head>
+
+<body>
+<center>
+	<!-- add header-->
+	<h1 class="header">Boarding House Management System</h1>
+	
+	<!-- add logo-->
+	<img class="logo" src="images/logo.png"width="300" height="200">
+	
+	<!-- add sub header-->
+	<marquee scrollamount="6"><h2>Find The Right House For Your Future</h2></marquee>
+	
+	<!-- add horizontal line-->
+	<hr class="hr">
+	
+	<!-- add menue bar-->
+	<ul>
+		<li class="link"><a href="index.html">Home</a></li>
+		<li class="link"><a href="room.html">Rooms</a></li>
+		<li class="link"><a href="register.html">Registration</a></li>
+		<li class="link"><a href="calculator.html">Calculator</a></li>
+		<li class="link"><a href="AboutUs.html">About Us</a></li>
+		<li class="link"><a href="contactUs.html">Contact Us</a></li>
+		<li class="link"><a href="terms.html">Tearms & Conditions</a></li>
+		<li class="link"><a href="Login.html">Login</a></li>
+		<li class="link"><a href="php/Logout.php">Logout</a></li>
+		
+	</ul>
+	
+	<!-- add line break-->
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<hr class="hr">
+	<br>
+	<br>
+	
+	
+	<h1><b>...Welcome to the Registration Page...</b></h1>
+	<br>
+	<br>
+	<center> 
+    <!--<div class="box">-->
+     <div class="productData" >
+
+       <form action="php/register.php" onsubmit="return checkPassword()" method="POST"  style="border-style:groove;" target="_self"  >
+   
+       <h1> New Registration </h1>
+  
+       <br>
+         <b>
+		  
+           <label> Full Name </label> <br>
+	       <input type="text" class="log" id="fname" name="fname" style="width:350px;"  placeholder="Enter your full name here" required >  <br><br>
+           Address <br>
+           <textarea class="log" id="add" name="add" rows="5"	cols="50" style="width:350px;" placeholder="Enter your home address" required ></textarea><br><br>
+	       Mobile Number <br>
+	       <input type="phone" class="log" id="mobile" name="mobile" style="width:350px;" pattern="[0-9]{10}"  placeholder="07xxxxxxxx" required >  <br><br>
+	       NIC Number <br>
+	       <input type="text" class="log" id="NIC" name="NIC" style="width:350px;" pattern="[0-9]{12}"  placeholder="xxxxxxxxxxx"required >  <br><br>
+	       Email <br>
+	       <input type="email" class="log" id="email" name="email" style="width:350px;" pattern="[a-zA-Z0-9#%_+-]+@[a-z0-9]+\.[a-z]{2,3}" placeholder="Email" required >  <br> <br> 
+	       Room No <br>
+	       <select class="log" id="rNo" name="rNo" style="width:350px;" required>
+		   <option>1</option>
+		   <option>2</option>
+		   <option>3</option>
+		   <option>4</option>
+		   <option>5</option>
+		   <option>6</option>
+		   <option>7</option>
+		   <option>8</option>
+		   <option>9</option>
+		   <option>10</option>
+		   </select>
+		   <br><br>
+		   Date <br>
+		   <input type="date" class="log" id="date" name="date" style="width:350px;" required>
+		   <br><br>
+		   Douments (Photo of NIC)<br>
+		   <input type="file" class="log" id="img" name="img" style="width:350px;" required>
+		   <br><br>
+		   Other Douments<br>
+		   <input type="file" class="log" id="oimg" name="oimg" style="width:350px;">
+		   <br><br>
+		   Password <br>
+	       <input  type="password" class="log" id="pw" name="pw" style="width:350px;" pattern="[a-zA-z0-9@#$%^&*]{6,12}"  placeholder="6-12 characters" required > <br> <br>
+		   Confirm Password <br>
+	       <input  type="password" class="log" id="rpw" name="rpw" style="width:350px;" pattern="[a-zA-z0-9@#$%^&*]{6,12}" placeholder="6-12 characters" required > <br> <br> 
+		   
+           <button class="set" type="Submit"> SUBMIT </button>  
+		   
+		   <input type="reset" class="set"  name="reset" value="Reset" id="reset"> <br><br>
+	       <a href="index.html" style="color:navy"> Go Back To Home Page</a> <br /> 
+		 
+         </b>	
+		 
+      </form>
+     </div>
+    <!--</div>-->
+   </center>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	
+	
+	
+	
+	
+	
+</center>	
+	
+	
+	<hr class="hr">
+	
+	<!-- add footer-->
+	<img src="images/socialFooter.jpg" width="300" height="90">
+	<img src="images/appStore.jpeg" width="350" height="90">
+	<img src="images/googlePlay.png" width="300" height="90">
+	<img src="images/windowsStore.png" width="300" height="90">
+</body>
+</html>

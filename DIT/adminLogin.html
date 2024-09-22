@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- add title-->
+	<title>home</title>
+	
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	
+</head>
+
+<body>
+<center>
+	<!-- add header-->
+	<h1 class="header">Boarding House Management System</h1>
+	
+	<!-- add logo-->
+	<img class="logo" src="images/logo.png"width="300" height="200">
+	
+	<!-- add sub header-->
+	<marquee scrollamount="6"><h2>Find The Right House For Your Future</h2></marquee>
+	
+	<!-- add horizontal line-->
+	<hr class="hr">
+	
+	<!-- add menue bar-->
+	<ul>
+		<li class="link"><a href="index.html">Home</a></li>
+		<li class="link"><a href="room.html">Rooms</a></li>
+		<li class="link"><a href="register.html">Registration</a></li>
+		<li class="link"><a href="calculator.html">Calculator</a></li>
+		<li class="link"><a href="AboutUs.html">About Us</a></li>
+		<li class="link"><a href="contactUs.html">Contact Us</a></li>
+		<li class="link"><a href="terms.html">Tearms & Conditions</a></li>
+		<li class="link"><a href="Login.html">Login</a></li>
+		<li class="link"><a href="php/Logout.php">Logout</a></li>
+		<li class="link"><a href="AdminLogin.html">Admin</a></li>
+		
+	</ul>
+	
+	<!-- add line break-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<hr class="hr">
+	<br>
+	<br>
+	
+	<h1><b>...Welcome to the Admin Login Page...</b></h1>
+	
+	<div class="frame">
+   
+		<form action="php/adminLogin.php" target="_self" method="POST">
+			 <hr>
+				 <h2 style="color: blue"> Log In ... </h2> 
+				 
+				 Email <br>
+				 <input type="text" class="set" name="email" style="width:300px;" pattern="[a-zA-Z0-9#%_+-]+@[a-z0-9]+\.[a-z]{2,3}" placeholder="Enter your Email">
+				 <br> <br>
+				 Password  <br>
+				 <input type="password" class="set" name="rpw" id="rpw" style="width:300px;"  pattern="[a-zA-z0-9@#$%^&*]{6,12}" placeholder="Enter your Password" > 
+				 <br> <br>
+				 
+				 <center> <button class="log" type="submit"  id="log1" name="log1" > Log In </button> </center> <br> <br>
+				 
+				 <h4>You are not Admin? <a href="Login.html"  style="color:red;"> Login as user </a> <h4>
+				 </div>
+				
+		</form>
+		
+   </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	
+	
+	
+	
+	
+</center>	
+	
+	
+	<hr class="hr">
+	
+	<!-- add footer-->
+	<img src="images/socialFooter.jpg" width="300" height="90">
+	<img src="images/appStore.jpeg" width="350" height="90">
+	<img src="images/googlePlay.png" width="300" height="90">
+	<img src="images/windowsStore.png" width="300" height="90">
+</body>
+</html>
